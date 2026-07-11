@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gudule Muzongo — Portfolio Technologies &amp; Robotique</title>
+  <meta name="description" content="Portfolio de Gudule Muzongo, passionnée par les technologies et la robotique.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navigation principale">
+      <a href="#hero" class="logo">Gudule<span>.dev</span></a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Ouvrir le menu de navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#hero">Accueil</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <h1>Je suis Gudule, passionnée par les technologies et la robotique !</h1>
+        <p class="hero-subtitle">Apprenante curieuse et rigoureuse, je conçois des projets à la croisée du code et de la robotique.</p>
+        <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+      </div>
+    </section>
+
+    <section id="apropos" class="apropos">
+      <h2>À propos</h2>
+      <div class="apropos-content">
+        <img src="assets/images/gudule-avatar.jpg" alt="Portrait de Gudule Muzongo" class="profile-photo" id="avatarImg" width="160" height="160">
+        <div class="apropos-text">
+          <p>Je m'appelle Gudule Muzongo. Passionnée par les technologies et la robotique, j'aime comprendre comment les choses fonctionnent et construire des solutions concrètes, du code au circuit électronique.</p>
+          <ul class="quality-badges" aria-label="Mes qualités">
+            <li class="badge">Flexible en apprentissage</li>
+            <li class="badge">Rigoureuse</li>
+            <li class="badge">Curieuse</li>
+            <li class="badge">Ambitieuse</li>
+          </ul>
+          <a href="#contact" class="btn btn-secondary">Me contacter</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="competences" class="competences">
+      <h2>Mes compétences</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h3>Programmation</h3>
+          <ul class="skill-list">
+            <li>
+              <span class="skill-name">HTML5 / CSS3</span>
+              <span class="skill-bar" role="img" aria-label="Niveau : intermédiaire"><span style="width:70%"></span></span>
+            </li>
+            <li>
+              <span class="skill-name">JavaScript</span>
+              <span class="skill-bar" role="img" aria-label="Niveau : débutant avancé"><span style="width:55%"></span></span>
+            </li>
+            <li>
+              <span class="skill-name">Python</span>
+              <span class="skill-bar" role="img" aria-label="Niveau : intermédiaire"><span style="width:65%"></span></span>
+            </li>
+            <li>
+              <span class="skill-name">Arduino / C++</span>
+              <span class="skill-bar" role="img" aria-label="Niveau : intermédiaire"><span style="width:60%"></span></span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3>Robotique &amp; Électronique</h3>
+          <ul class="skill-list">
+            <li>
+              <span class="skill-name">Capteurs &amp; actionneurs</span>
+              <span class="skill-bar" role="img" aria-label="Niveau : intermédiaire"><span style="width:65%"></span></span>
+            </li>
+            <li>
+              <span class="skill-name">Montage de circuits</span>
+              <span class="skill-bar" role="img" aria-label="Niveau : intermédiaire"><span style="width:60%"></span></span>
+            </li>
+            <li>
+              <span class="skill-name">Prototypage</span>
+              <span class="skill-bar" role="img" aria-label="Niveau : débutant avancé"><span style="width:55%"></span></span>
+            </li>
+            <li>
+              <span class="skill-name">Résolution de problèmes</span>
+              <span class="skill-bar" role="img" aria-label="Niveau : avancé"><span style="width:85%"></span></span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="projets" class="projets">
+      <h2>Mes projets</h2>
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <h3>Robot suiveur de ligne</h3>
+          <p>Robot autonome à base d'Arduino, capable de suivre une trajectoire grâce à des capteurs infrarouges.</p>
+          <a href="#contact" class="btn btn-small">En savoir plus</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Projet domotique connecté</h3>
+          <p>Interface simple pour piloter des objets connectés (LED, capteurs) via Bluetooth / WiFi.</p>
+          <a href="#contact" class="btn btn-small">En savoir plus</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Portfolio personnel</h3>
+          <p>Ce site, conçu en HTML, CSS et JavaScript dans le cadre de mon apprentissage du développement web.</p>
+          <a href="#contact" class="btn btn-small">En savoir plus</a>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Vous avez un projet en tête ?</h2>
+      <p>N'hésitez pas à me contacter</p>
+
+      <form id="contactForm" class="contact-form" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fullName">Nom complet</label>
+            <input type="text" id="fullName" name="fullName" required aria-describedby="fullNameError">
+            <span class="error-message" id="fullNameError" role="alert"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Adresse email</label>
+            <input type="email" id="email" name="email" required aria-describedby="emailError">
+            <span class="error-message" id="emailError" role="alert"></span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Votre message</label>
+          <textarea id="message" name="message" rows="5" required aria-describedby="messageError"></textarea>
+          <span class="error-message" id="messageError" role="alert"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Envoyer</button>
+        <p class="form-feedback" id="formFeedback" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Gudule Muzongo — Portfolio réalisé en HTML, CSS &amp; JavaScript.</p>
+  </footer>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
