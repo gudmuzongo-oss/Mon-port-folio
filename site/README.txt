@@ -1,5 +1,5 @@
 ===========================================================
-PORTFOLIO PERSONNEL — Gudule Muzongo
+PORTFOLIO PERSONNEL — Guy Muzongo
 Projet final — Cours Développement Web (Semaine 6)
 ===========================================================
 
